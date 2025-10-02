@@ -1,0 +1,6 @@
+framework module Pods_Voice_Journal {
+  umbrella header "Pods-Voice Journal-umbrella.h"
+
+  export *
+  module * { export * }
+}

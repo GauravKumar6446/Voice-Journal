@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F9AEB62165A23412BC32A460CF8E19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */; };
+		0ED4CD8803A737DCCAC53703F02377B0 /* siri_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */; };
+		13104EB302D5A6A4EAA26067CB68FB6F /* MicrophonePermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */; };
+		2BC6365C8B83E1A2FBA0A5908F7F2DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		43423E3CDCE19C08F96AFDF52177E671 /* Pods-Voice Journal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC90FFE779DAC5DC4F2124C724DCC9B /* Pods-Voice Journal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E867DC48E3D05E9CE870460DC193B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */; };
+		53C74040B46AA8E0DDFE83FC53B344E1 /* siri_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */; };
+		559CA831A7A066D8E627DA5F862C8C08 /* VoiceOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */; };
+		58DAE231B1B34F0D5B9BCDBCEDB30E58 /* InstantSearchVoiceOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */; };
+		60802597FAE8F7EE0A16DA1BAE3D584B /* NoPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */; };
+		6B50BE925B911F231823E5CF002A982C /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */; };
+		70F5D2D412379CC8F623D3D0F5E62337 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */; };
+		80099AEED294FEE16D678C6AFA7211AF /* AutoLayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */; };
+		90EB6C07ADB764DA89CEB86A32C1772B /* PermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */; };
+		95EE15712335E643284B119E0B5C22DC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */; };
+		A2E6FC0CDA833E2080CC42ED053B3977 /* SpeechRecognitionPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */; };
+		AEEF6ACA4BFAA69A317872055C5707BD /* RecordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */; };
+		B1B58C9CD218E457D989CA51DBEE9AB8 /* VoiceOverlayPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */; };
+		B3843D94A3BEDC2538FCB91D94BA5741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		B3D33996D07CD1B2112AF65531D39D49 /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */; };
+		B90ADDE4D258B4EDB0BEEA4CCAF8CC23 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */; };
+		BC59A31A9DA5BC99B1D31423FD869AF9 /* Pods-Voice Journal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1170E97BDACC805C0264FC27541F5EA9 /* Pods-Voice Journal-dummy.m */; };
+		C905F5E0876F98F3458189C81E0BA24E /* siri_error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */; };
+		CD3849C10F26BE8A6E4265DA74BF2AF7 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */; };
+		D87485F1E3F4A67CDD855155CE4F1BA4 /* InstantSearchVoiceOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC58A85309C505B2D5FD944FA8374D53 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */; };
+		F4BF6341ECF159D10BC136DE75EACE36 /* AllowPermissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93DD77831464CA3BDF3744311E04EE97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A186D5E4FEF43A5AF44DB305B59EC1F;
+			remoteInfo = InstantSearchVoiceOverlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/PermissionController.swift; sourceTree = "<group>"; };
+		091001968C2AAD6C0E95DA8FFC52C969 /* Pods-Voice Journal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Voice Journal.modulemap"; sourceTree = "<group>"; };
+		0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MicrophonePermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/MicrophonePermissionController.swift; sourceTree = "<group>"; };
+		0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Extensions.swift; sourceTree = "<group>"; };
+		113B4F8296F500A88980264815A732E0 /* InstantSearchVoiceOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InstantSearchVoiceOverlay.modulemap; sourceTree = "<group>"; };
+		1170E97BDACC805C0264FC27541F5EA9 /* Pods-Voice Journal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voice Journal-dummy.m"; sourceTree = "<group>"; };
+		12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/SpeechController.swift; sourceTree = "<group>"; };
+		20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/PermissionViewController.swift; sourceTree = "<group>"; };
+		22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayPackage.swift; path = Sources/InstantSearchVoiceOverlay/VoiceOverlayPackage.swift; sourceTree = "<group>"; };
+		2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-umbrella.h"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/RecordingViewController.swift; sourceTree = "<group>"; };
+		467212343F063730264AEDC47E1EE6D0 /* Pods-Voice Journal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voice Journal.release.xcconfig"; sourceTree = "<group>"; };
+		49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/InstantSearchVoiceOverlay/Views/Assets.xcassets; sourceTree = "<group>"; };
+		558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_start.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_start.mp3; sourceTree = "<group>"; };
+		5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.release.xcconfig; sourceTree = "<group>"; };
+		6633DF7970A9717632D6E3958390E191 /* InstantSearchVoiceOverlay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InstantSearchVoiceOverlay-Info.plist"; sourceTree = "<group>"; };
+		6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/ResultViewController.swift; sourceTree = "<group>"; };
+		713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoLayoutHelpers.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/AutoLayoutHelpers.swift; sourceTree = "<group>"; };
+		783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllowPermissionButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/AllowPermissionButton.swift; sourceTree = "<group>"; };
+		7CEBF1A8758489E7A535784A6FBE743C /* Pods-Voice Journal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voice Journal-Info.plist"; sourceTree = "<group>"; };
+		7FFA4BF5E0930BA9BE2155EF0EA59D22 /* Pods-Voice Journal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voice Journal-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPermissionViewController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/NoPermissionViewController.swift; sourceTree = "<group>"; };
+		82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantSearchVoiceOverlay.debug.xcconfig; sourceTree = "<group>"; };
+		870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingButton.swift; path = Sources/InstantSearchVoiceOverlay/Views/RecordingButton.swift; sourceTree = "<group>"; };
+		88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_end.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_end.mp3; sourceTree = "<group>"; };
+		8DB7E05E363415EF6B6DBD4C90FB07C1 /* InstantSearchVoiceOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantSearchVoiceOverlay-prefix.pch"; sourceTree = "<group>"; };
+		902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionPermissionController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/Permission/SpeechRecognitionPermissionController.swift; sourceTree = "<group>"; };
+		9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseView.swift; path = Sources/InstantSearchVoiceOverlay/Views/CloseView.swift; sourceTree = "<group>"; };
+		9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recordable.swift; path = Sources/InstantSearchVoiceOverlay/Protocols/Recordable.swift; sourceTree = "<group>"; };
+		9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InstantSearchVoiceOverlay-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B76BCDD72B02DBA36D025871AAE78879 /* Pods-Voice Journal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voice Journal.debug.xcconfig"; sourceTree = "<group>"; };
+		BCC90FFE779DAC5DC4F2124C724DCC9B /* Pods-Voice Journal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voice Journal-umbrella.h"; sourceTree = "<group>"; };
+		C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Sources/InstantSearchVoiceOverlay/Helpers/Constant.swift; sourceTree = "<group>"; };
+		C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = siri_error.mp3; path = Sources/InstantSearchVoiceOverlay/Sound/siri_error.mp3; sourceTree = "<group>"; };
+		C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantSearchVoiceOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF20BD7D901CD394FA7BD48328C6B3FA /* Pods-Voice Journal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voice Journal-frameworks.sh"; sourceTree = "<group>"; };
+		D90575C48E3AC92D1717962BBBCAD006 /* Pods-Voice Journal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voice Journal-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceOverlayController.swift; path = Sources/InstantSearchVoiceOverlay/Controllers/VoiceOverlayController.swift; sourceTree = "<group>"; };
+		E4F2268BCC978EAD67E3828BA3E4B7BC /* Pods_Voice_Journal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voice_Journal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		257E1309EA91596FAE6CB77C72960996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3843D94A3BEDC2538FCB91D94BA5741 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5455CF077F0B6927155DF79BE317C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC6365C8B83E1A2FBA0A5908F7F2DD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38C940051735083180D138D1DAE832C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay.framework */,
+				E4F2268BCC978EAD67E3828BA3E4B7BC /* Pods_Voice_Journal.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43977E34DE8F264F277AD6C29DDBC242 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49DECFFA47D4898AE1512DC7BB3D595E /* Assets.xcassets */,
+				88122E317EB7575A4EB55DF442C726E2 /* siri_end.mp3 */,
+				C7C4724338095EDDECBBBF1FFE671307 /* siri_error.mp3 */,
+				558CA1AD0F05689331ADA28E283BD93F /* siri_start.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		662F5F45B5F840B70DE3FD2A20A152F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				113B4F8296F500A88980264815A732E0 /* InstantSearchVoiceOverlay.modulemap */,
+				9C4CE741D762F691BF42AB99377FE3FC /* InstantSearchVoiceOverlay-dummy.m */,
+				6633DF7970A9717632D6E3958390E191 /* InstantSearchVoiceOverlay-Info.plist */,
+				8DB7E05E363415EF6B6DBD4C90FB07C1 /* InstantSearchVoiceOverlay-prefix.pch */,
+				2BC84B8E847A5E8369438024ED7CA6CD /* InstantSearchVoiceOverlay-umbrella.h */,
+				82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */,
+				5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InstantSearchVoiceOverlay";
+			sourceTree = "<group>";
+		};
+		BE36CCACDFFBC5CF6AEE1C45F66AACB8 /* Pods-Voice Journal */ = {
+			isa = PBXGroup;
+			children = (
+				091001968C2AAD6C0E95DA8FFC52C969 /* Pods-Voice Journal.modulemap */,
+				7FFA4BF5E0930BA9BE2155EF0EA59D22 /* Pods-Voice Journal-acknowledgements.markdown */,
+				D90575C48E3AC92D1717962BBBCAD006 /* Pods-Voice Journal-acknowledgements.plist */,
+				1170E97BDACC805C0264FC27541F5EA9 /* Pods-Voice Journal-dummy.m */,
+				CF20BD7D901CD394FA7BD48328C6B3FA /* Pods-Voice Journal-frameworks.sh */,
+				7CEBF1A8758489E7A535784A6FBE743C /* Pods-Voice Journal-Info.plist */,
+				BCC90FFE779DAC5DC4F2124C724DCC9B /* Pods-Voice Journal-umbrella.h */,
+				B76BCDD72B02DBA36D025871AAE78879 /* Pods-Voice Journal.debug.xcconfig */,
+				467212343F063730264AEDC47E1EE6D0 /* Pods-Voice Journal.release.xcconfig */,
+			);
+			name = "Pods-Voice Journal";
+			path = "Target Support Files/Pods-Voice Journal";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E216616929ACEDDABC2C1EB7728237B4 /* Pods */,
+				38C940051735083180D138D1DAE832C7 /* Products */,
+				D00F3C4D2ADEA0C55F9E434EB506E71D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D00F3C4D2ADEA0C55F9E434EB506E71D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE36CCACDFFBC5CF6AEE1C45F66AACB8 /* Pods-Voice Journal */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65F0FF6FE320A5F513F46CE5395FAE4 /* InstantSearchVoiceOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				783A9EC1722617E668250F4F44CA5088 /* AllowPermissionButton.swift */,
+				713CD3BEA3DBA28389913616D94EDBC3 /* AutoLayoutHelpers.swift */,
+				9113B8F00A4CC024F57B76E8BA8E10AA /* CloseView.swift */,
+				C5BB75FEEFB295D3C4D809DB70A5D6C7 /* Constant.swift */,
+				0C7B8885C5461029381EB29D607F85B0 /* Extensions.swift */,
+				0B3B350806A265177DD131E0CDE66144 /* MicrophonePermissionController.swift */,
+				8012E6DBDF8A5ED9EDD750F120512178 /* NoPermissionViewController.swift */,
+				007DFD96E0B6EEFFB638E30FDE58B99B /* PermissionController.swift */,
+				20A99096E4B017CE7CE37843FC66FCC2 /* PermissionViewController.swift */,
+				9AD1EE55F34E601FDF740E787A975BCC /* Recordable.swift */,
+				870EB25838230F6FD6650BB452FE2BB5 /* RecordingButton.swift */,
+				4166B62C49DB6236A4FC5E68EE83D9AD /* RecordingViewController.swift */,
+				6DD4186F1F15649FC77E51A314EE3A91 /* ResultViewController.swift */,
+				12B0FF7FE1EAD0A54B8F00DDB879E712 /* SpeechController.swift */,
+				902C5C1A22A8C7166E38695C126A8D29 /* SpeechRecognitionPermissionController.swift */,
+				DE2D3980015F6238FD122ADF13552CD6 /* VoiceOverlayController.swift */,
+				22EECB3DE06F88F17FE26FE5F0B4AB2C /* VoiceOverlayPackage.swift */,
+				43977E34DE8F264F277AD6C29DDBC242 /* Resources */,
+				662F5F45B5F840B70DE3FD2A20A152F3 /* Support Files */,
+			);
+			path = InstantSearchVoiceOverlay;
+			sourceTree = "<group>";
+		};
+		E216616929ACEDDABC2C1EB7728237B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D65F0FF6FE320A5F513F46CE5395FAE4 /* InstantSearchVoiceOverlay */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3047CACC433DC28FEA6E0F13EC65975 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43423E3CDCE19C08F96AFDF52177E671 /* Pods-Voice Journal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D024D5A0C75F52E1B51C20B204639D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87485F1E3F4A67CDD855155CE4F1BA4 /* InstantSearchVoiceOverlay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A186D5E4FEF43A5AF44DB305B59EC1F /* InstantSearchVoiceOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220BD9B2C147400C50DF9AB21E39303 /* Build configuration list for PBXNativeTarget "InstantSearchVoiceOverlay" */;
+			buildPhases = (
+				D8D024D5A0C75F52E1B51C20B204639D /* Headers */,
+				CEDE452CA9EA0EB5BAE61B130EB65BD2 /* Sources */,
+				257E1309EA91596FAE6CB77C72960996 /* Frameworks */,
+				C51D610CDF4D345170AD47D0DE3360C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstantSearchVoiceOverlay;
+			productName = InstantSearchVoiceOverlay;
+			productReference = C906FF0017ACE692189192383B875D74 /* InstantSearchVoiceOverlay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA8088637120AE206CFA012428A26CD0 /* Pods-Voice Journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A4646E5620548F5FD38E2835A95092B /* Build configuration list for PBXNativeTarget "Pods-Voice Journal" */;
+			buildPhases = (
+				D3047CACC433DC28FEA6E0F13EC65975 /* Headers */,
+				E5E0137BE36C40137E338364CC6E0E15 /* Sources */,
+				2C5455CF077F0B6927155DF79BE317C1 /* Frameworks */,
+				C036C3271AA2065CDB4B02D0F55C589F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6F2A7AEB629423A2F3F5BFEEBA2C5B /* PBXTargetDependency */,
+			);
+			name = "Pods-Voice Journal";
+			productName = Pods_Voice_Journal;
+			productReference = E4F2268BCC978EAD67E3828BA3E4B7BC /* Pods_Voice_Journal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 38C940051735083180D138D1DAE832C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A186D5E4FEF43A5AF44DB305B59EC1F /* InstantSearchVoiceOverlay */,
+				BA8088637120AE206CFA012428A26CD0 /* Pods-Voice Journal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C036C3271AA2065CDB4B02D0F55C589F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51D610CDF4D345170AD47D0DE3360C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E867DC48E3D05E9CE870460DC193B0 /* Assets.xcassets in Resources */,
+				0ED4CD8803A737DCCAC53703F02377B0 /* siri_end.mp3 in Resources */,
+				C905F5E0876F98F3458189C81E0BA24E /* siri_error.mp3 in Resources */,
+				53C74040B46AA8E0DDFE83FC53B344E1 /* siri_start.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDE452CA9EA0EB5BAE61B130EB65BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BF6341ECF159D10BC136DE75EACE36 /* AllowPermissionButton.swift in Sources */,
+				80099AEED294FEE16D678C6AFA7211AF /* AutoLayoutHelpers.swift in Sources */,
+				6B50BE925B911F231823E5CF002A982C /* CloseView.swift in Sources */,
+				95EE15712335E643284B119E0B5C22DC /* Constant.swift in Sources */,
+				03F9AEB62165A23412BC32A460CF8E19 /* Extensions.swift in Sources */,
+				58DAE231B1B34F0D5B9BCDBCEDB30E58 /* InstantSearchVoiceOverlay-dummy.m in Sources */,
+				13104EB302D5A6A4EAA26067CB68FB6F /* MicrophonePermissionController.swift in Sources */,
+				60802597FAE8F7EE0A16DA1BAE3D584B /* NoPermissionViewController.swift in Sources */,
+				90EB6C07ADB764DA89CEB86A32C1772B /* PermissionController.swift in Sources */,
+				CD3849C10F26BE8A6E4265DA74BF2AF7 /* PermissionViewController.swift in Sources */,
+				70F5D2D412379CC8F623D3D0F5E62337 /* Recordable.swift in Sources */,
+				AEEF6ACA4BFAA69A317872055C5707BD /* RecordingButton.swift in Sources */,
+				B90ADDE4D258B4EDB0BEEA4CCAF8CC23 /* RecordingViewController.swift in Sources */,
+				EC58A85309C505B2D5FD944FA8374D53 /* ResultViewController.swift in Sources */,
+				B3D33996D07CD1B2112AF65531D39D49 /* SpeechController.swift in Sources */,
+				A2E6FC0CDA833E2080CC42ED053B3977 /* SpeechRecognitionPermissionController.swift in Sources */,
+				559CA831A7A066D8E627DA5F862C8C08 /* VoiceOverlayController.swift in Sources */,
+				B1B58C9CD218E457D989CA51DBEE9AB8 /* VoiceOverlayPackage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E0137BE36C40137E338364CC6E0E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC59A31A9DA5BC99B1D31423FD869AF9 /* Pods-Voice Journal-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE6F2A7AEB629423A2F3F5BFEEBA2C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InstantSearchVoiceOverlay;
+			target = 3A186D5E4FEF43A5AF44DB305B59EC1F /* InstantSearchVoiceOverlay */;
+			targetProxy = 93DD77831464CA3BDF3744311E04EE97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E2BA502CAF3F70AA1B59F971A0AE3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F669754CA69F851A47915CAB3E5C45F /* InstantSearchVoiceOverlay.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay.modulemap";
+				PRODUCT_MODULE_NAME = InstantSearchVoiceOverlay;
+				PRODUCT_NAME = InstantSearchVoiceOverlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44A4B2FB6211B90C1949A44A381F6D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		71CDB5A856E84D03B5C5A2A4F1F517B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467212343F063730264AEDC47E1EE6D0 /* Pods-Voice Journal.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voice Journal/Pods-Voice Journal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Voice Journal/Pods-Voice Journal.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0DC1C2C814704734F83EAB35BB20B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BC56A23111FD39FF0411F22A7345772E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76BCDD72B02DBA36D025871AAE78879 /* Pods-Voice Journal.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voice Journal/Pods-Voice Journal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Voice Journal/Pods-Voice Journal.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEC5A2504998F313E37164E07341F201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DD9B481BA9486825288ECD4AA8C2A4 /* InstantSearchVoiceOverlay.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InstantSearchVoiceOverlay/InstantSearchVoiceOverlay.modulemap";
+				PRODUCT_MODULE_NAME = InstantSearchVoiceOverlay;
+				PRODUCT_NAME = InstantSearchVoiceOverlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DC1C2C814704734F83EAB35BB20B21 /* Debug */,
+				44A4B2FB6211B90C1949A44A381F6D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4646E5620548F5FD38E2835A95092B /* Build configuration list for PBXNativeTarget "Pods-Voice Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC56A23111FD39FF0411F22A7345772E /* Debug */,
+				71CDB5A856E84D03B5C5A2A4F1F517B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F220BD9B2C147400C50DF9AB21E39303 /* Build configuration list for PBXNativeTarget "InstantSearchVoiceOverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC5A2504998F313E37164E07341F201 /* Debug */,
+				2E2BA502CAF3F70AA1B59F971A0AE3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
